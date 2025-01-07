@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c6a97856db1f24042a163c9b933f1e7c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c6a97856db1f24042a163c9b933f1e7c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c6a97856db1f24042a163c9b933f1e7c = L.map(
+                "map_c6a97856db1f24042a163c9b933f1e7c",
+                {
+                    center: [64.9631, -19.0208],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7de477780c160245d194696138085d69 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var marker_1fc346d0433cf2d6956dc9f76875e7eb = L.marker(
+                [64.1355, -21.8954],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_00371bdf6459abcefa253f0cf126070f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_1fc346d0433cf2d6956dc9f76875e7eb.setIcon(icon_00371bdf6459abcefa253f0cf126070f);
+        
+    
+        var popup_3a3b6d6b5df7f45b83456b90108690f0 = L.popup({"maxWidth": 300});
+
+        
+            var html_9bc8bcba7fe46236a17fa721eb0fca57 = $(`<div id="html_9bc8bcba7fe46236a17fa721eb0fca57" style="width: 100.0%; height: 100.0%;"><b>Day 1 Activity:</b><br><b>Arrival in Reykjavik</b><br>Explore Hallgrímskirkja, Harpa, and Sun Voyager.</div>`)[0];
+            popup_3a3b6d6b5df7f45b83456b90108690f0.setContent(html_9bc8bcba7fe46236a17fa721eb0fca57);
+        
+
+        marker_1fc346d0433cf2d6956dc9f76875e7eb.bindPopup(popup_3a3b6d6b5df7f45b83456b90108690f0)
+        ;
+
+        
+    
+    
+            var marker_e0520c48fa8449a29bb96fe60aa98658 = L.marker(
+                [64.142, -21.918],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_e92c6f7527ebb8b97f6e2dbbf23e6777 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_e0520c48fa8449a29bb96fe60aa98658.setIcon(icon_e92c6f7527ebb8b97f6e2dbbf23e6777);
+        
+    
+        var popup_6e57b07a34ecdf97c70d5d3fd34d362c = L.popup({"maxWidth": 300});
+
+        
+            var html_79dc296771bb2b0f1641d48003af1af0 = $(`<div id="html_79dc296771bb2b0f1641d48003af1af0" style="width: 100.0%; height: 100.0%;"><b>Day 1 Accommodation:</b><br><b>Hotel/Airbnb in Reykjavik</b><br>Relax after arrival.</div>`)[0];
+            popup_6e57b07a34ecdf97c70d5d3fd34d362c.setContent(html_79dc296771bb2b0f1641d48003af1af0);
+        
+
+        marker_e0520c48fa8449a29bb96fe60aa98658.bindPopup(popup_6e57b07a34ecdf97c70d5d3fd34d362c)
+        ;
+
+        
+    
+    
+            var marker_65df848bc905c0f7e25282fa1c8cfcd4 = L.marker(
+                [64.255, -21.129],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_6a81f6fc0b4098f1a1b2939d14f8d034 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_65df848bc905c0f7e25282fa1c8cfcd4.setIcon(icon_6a81f6fc0b4098f1a1b2939d14f8d034);
+        
+    
+        var popup_f2e1bacf962d97ac00c0f125815103f5 = L.popup({"maxWidth": 300});
+
+        
+            var html_2c690c361044696848afbfbcc11e1e66 = $(`<div id="html_2c690c361044696848afbfbcc11e1e66" style="width: 100.0%; height: 100.0%;"><b>Day 2 Activity:</b><br><b>Þingvellir National Park</b><br>Walk between tectonic plates.</div>`)[0];
+            popup_f2e1bacf962d97ac00c0f125815103f5.setContent(html_2c690c361044696848afbfbcc11e1e66);
+        
+
+        marker_65df848bc905c0f7e25282fa1c8cfcd4.bindPopup(popup_f2e1bacf962d97ac00c0f125815103f5)
+        ;
+
+        
+    
+    
+            var marker_60219b51f76cec62e036407fe4fc685c = L.marker(
+                [64.3104, -20.3024],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_fdc53d9b1dfa8c7cef87f3be4f3ef3bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_60219b51f76cec62e036407fe4fc685c.setIcon(icon_fdc53d9b1dfa8c7cef87f3be4f3ef3bb);
+        
+    
+        var popup_57e9b25db221a8400627ef06155a95d9 = L.popup({"maxWidth": 300});
+
+        
+            var html_f8d8bda5b108b32725f4a019c79485cd = $(`<div id="html_f8d8bda5b108b32725f4a019c79485cd" style="width: 100.0%; height: 100.0%;"><b>Day 2 Activity:</b><br><b>Geysir</b><br>Watch Strokkur erupt.</div>`)[0];
+            popup_57e9b25db221a8400627ef06155a95d9.setContent(html_f8d8bda5b108b32725f4a019c79485cd);
+        
+
+        marker_60219b51f76cec62e036407fe4fc685c.bindPopup(popup_57e9b25db221a8400627ef06155a95d9)
+        ;
+
+        
+    
+    
+            var marker_4152da4080ae47c07ed76fa54a12b04f = L.marker(
+                [64.327, -20.1218],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_b241ce6b8279edb4776592270cdf88dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4152da4080ae47c07ed76fa54a12b04f.setIcon(icon_b241ce6b8279edb4776592270cdf88dc);
+        
+    
+        var popup_0d6710c08958dd762c6eceaed4b34efc = L.popup({"maxWidth": 300});
+
+        
+            var html_61d54bd8ab505b64393fee19d3b53e13 = $(`<div id="html_61d54bd8ab505b64393fee19d3b53e13" style="width: 100.0%; height: 100.0%;"><b>Day 2 Activity:</b><br><b>Gullfoss</b><br>Admire this powerful waterfall.</div>`)[0];
+            popup_0d6710c08958dd762c6eceaed4b34efc.setContent(html_61d54bd8ab505b64393fee19d3b53e13);
+        
+
+        marker_4152da4080ae47c07ed76fa54a12b04f.bindPopup(popup_0d6710c08958dd762c6eceaed4b34efc)
+        ;
+
+        
+    
+    
+            var marker_cc9bf78dd5d6da3426dd50100b5b86ed = L.marker(
+                [63.933, -21.001],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_72cab54851479a83bcfd43f3fdf66c9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cc9bf78dd5d6da3426dd50100b5b86ed.setIcon(icon_72cab54851479a83bcfd43f3fdf66c9d);
+        
+    
+        var popup_1444fbe1344e058be25b25293757fa87 = L.popup({"maxWidth": 300});
+
+        
+            var html_4859521877d948193014e70bda0235b3 = $(`<div id="html_4859521877d948193014e70bda0235b3" style="width: 100.0%; height: 100.0%;"><b>Day 2 Accommodation:</b><br><b>Hotel/Airbnb in Selfoss</b><br>Stay overnight.</div>`)[0];
+            popup_1444fbe1344e058be25b25293757fa87.setContent(html_4859521877d948193014e70bda0235b3);
+        
+
+        marker_cc9bf78dd5d6da3426dd50100b5b86ed.bindPopup(popup_1444fbe1344e058be25b25293757fa87)
+        ;
+
+        
+    
+    
+            var marker_3758ee2ff738db091dfd4cd284c5c558 = L.marker(
+                [63.6156, -19.992],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_ca9c8f208f76b44f5ce78ccf3d00a7c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_3758ee2ff738db091dfd4cd284c5c558.setIcon(icon_ca9c8f208f76b44f5ce78ccf3d00a7c3);
+        
+    
+        var popup_8cd5d2c33a0ddccc8fc7644d9ca45e69 = L.popup({"maxWidth": 300});
+
+        
+            var html_9c8ebc2d11041890addd888a7b108b1b = $(`<div id="html_9c8ebc2d11041890addd888a7b108b1b" style="width: 100.0%; height: 100.0%;"><b>Day 3 Activity:</b><br><b>Seljalandsfoss</b><br>Walk behind the waterfall.</div>`)[0];
+            popup_8cd5d2c33a0ddccc8fc7644d9ca45e69.setContent(html_9c8ebc2d11041890addd888a7b108b1b);
+        
+
+        marker_3758ee2ff738db091dfd4cd284c5c558.bindPopup(popup_8cd5d2c33a0ddccc8fc7644d9ca45e69)
+        ;
+
+        
+    
+    
+            var marker_4df6b3bd41613eb8c2e90bf2f87edcbd = L.marker(
+                [63.532, -19.511],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_c0a43ade61d6baa614be2a55be1f431f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_4df6b3bd41613eb8c2e90bf2f87edcbd.setIcon(icon_c0a43ade61d6baa614be2a55be1f431f);
+        
+    
+        var popup_77409e2b799d8e6862a1ff1752c8e720 = L.popup({"maxWidth": 300});
+
+        
+            var html_d88c6e745630e80be8e2e75827d6a03a = $(`<div id="html_d88c6e745630e80be8e2e75827d6a03a" style="width: 100.0%; height: 100.0%;"><b>Day 3 Activity:</b><br><b>Skógafoss</b><br>Climb for panoramic views.</div>`)[0];
+            popup_77409e2b799d8e6862a1ff1752c8e720.setContent(html_d88c6e745630e80be8e2e75827d6a03a);
+        
+
+        marker_4df6b3bd41613eb8c2e90bf2f87edcbd.bindPopup(popup_77409e2b799d8e6862a1ff1752c8e720)
+        ;
+
+        
+    
+    
+            var marker_9728ac60555485ca89f53d47e61e7e19 = L.marker(
+                [63.419, -19.006],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_c2b6040b00a3cbc43c432171f0dab1e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_9728ac60555485ca89f53d47e61e7e19.setIcon(icon_c2b6040b00a3cbc43c432171f0dab1e3);
+        
+    
+        var popup_680d35e565949f3b215a3c0193381daf = L.popup({"maxWidth": 300});
+
+        
+            var html_5d0d3def824d5c2e2d8990a227d0fb95 = $(`<div id="html_5d0d3def824d5c2e2d8990a227d0fb95" style="width: 100.0%; height: 100.0%;"><b>Day 3 Activity:</b><br><b>Reynisfjara Black Sand Beach</b><br>Explore basalt columns.</div>`)[0];
+            popup_680d35e565949f3b215a3c0193381daf.setContent(html_5d0d3def824d5c2e2d8990a227d0fb95);
+        
+
+        marker_9728ac60555485ca89f53d47e61e7e19.bindPopup(popup_680d35e565949f3b215a3c0193381daf)
+        ;
+
+        
+    
+    
+            var marker_db98b429243fe9a2ccc9f0f0941ea78f = L.marker(
+                [63.419, -19.006],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_0dd8fac1bcb797c19c3e224f8ed913a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "yellow", "prefix": "glyphicon"}
+            );
+            marker_db98b429243fe9a2ccc9f0f0941ea78f.setIcon(icon_0dd8fac1bcb797c19c3e224f8ed913a1);
+        
+    
+        var popup_93686186dbd68b177d860d9d0415fef5 = L.popup({"maxWidth": 300});
+
+        
+            var html_5deeb3445dc00b6972e23008ce6bf0dd = $(`<div id="html_5deeb3445dc00b6972e23008ce6bf0dd" style="width: 100.0%; height: 100.0%;"><b>Day 3 Accommodation:</b><br><b>Hotel/Airbnb in Vík</b><br>Stay overnight.</div>`)[0];
+            popup_93686186dbd68b177d860d9d0415fef5.setContent(html_5deeb3445dc00b6972e23008ce6bf0dd);
+        
+
+        marker_db98b429243fe9a2ccc9f0f0941ea78f.bindPopup(popup_93686186dbd68b177d860d9d0415fef5)
+        ;
+
+        
+    
+    
+            var marker_815b17463a7af107e20c1fd1df9eff0b = L.marker(
+                [64.048, -16.179],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_ba68bbf6ca1dc164a6a4fbe979a9ea99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_815b17463a7af107e20c1fd1df9eff0b.setIcon(icon_ba68bbf6ca1dc164a6a4fbe979a9ea99);
+        
+    
+        var popup_07d8b5c7f05cebb595616de681e3a95d = L.popup({"maxWidth": 300});
+
+        
+            var html_6be41e9089df3df370144aca17cb7e55 = $(`<div id="html_6be41e9089df3df370144aca17cb7e55" style="width: 100.0%; height: 100.0%;"><b>Day 4 Activity:</b><br><b>Jökulsárlón Glacier Lagoon</b><br>See floating icebergs.</div>`)[0];
+            popup_07d8b5c7f05cebb595616de681e3a95d.setContent(html_6be41e9089df3df370144aca17cb7e55);
+        
+
+        marker_815b17463a7af107e20c1fd1df9eff0b.bindPopup(popup_07d8b5c7f05cebb595616de681e3a95d)
+        ;
+
+        
+    
+    
+            var marker_748814c9dc0d48a7bea55784ec282bf0 = L.marker(
+                [64.044, -16.178],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_ae83db9bdb8bad1e27c28d66f621737f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_748814c9dc0d48a7bea55784ec282bf0.setIcon(icon_ae83db9bdb8bad1e27c28d66f621737f);
+        
+    
+        var popup_01ad40e0bddd99725639d51903766f54 = L.popup({"maxWidth": 300});
+
+        
+            var html_9911e3ba36fe0be58af0cb3bbe732509 = $(`<div id="html_9911e3ba36fe0be58af0cb3bbe732509" style="width: 100.0%; height: 100.0%;"><b>Day 4 Activity:</b><br><b>Diamond Beach</b><br>Marvel at icebergs washed ashore.</div>`)[0];
+            popup_01ad40e0bddd99725639d51903766f54.setContent(html_9911e3ba36fe0be58af0cb3bbe732509);
+        
+
+        marker_748814c9dc0d48a7bea55784ec282bf0.bindPopup(popup_01ad40e0bddd99725639d51903766f54)
+        ;
+
+        
+    
+    
+            var marker_64870f3e1e49c8da3d75b7219b64b807 = L.marker(
+                [64.048, -16.179],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_46afca5f32f4fb78cdb44b706efcaa67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_64870f3e1e49c8da3d75b7219b64b807.setIcon(icon_46afca5f32f4fb78cdb44b706efcaa67);
+        
+    
+        var popup_e055758dbb810849d2feb27091f59ed2 = L.popup({"maxWidth": 300});
+
+        
+            var html_040b1b5cfa07c5ddbf507dfd9035e801 = $(`<div id="html_040b1b5cfa07c5ddbf507dfd9035e801" style="width: 100.0%; height: 100.0%;"><b>Day 4 Accommodation:</b><br><b>Hotel/Guesthouse near Jökulsárlón</b><br>Stay overnight.</div>`)[0];
+            popup_e055758dbb810849d2feb27091f59ed2.setContent(html_040b1b5cfa07c5ddbf507dfd9035e801);
+        
+
+        marker_64870f3e1e49c8da3d75b7219b64b807.bindPopup(popup_e055758dbb810849d2feb27091f59ed2)
+        ;
+
+        
+    
+    
+            var marker_a98d0a9afc03ef63156e361a0d5b1ce9 = L.marker(
+                [64.656, -14.282],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_159e77664c65ac2a89968078413ae3da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a98d0a9afc03ef63156e361a0d5b1ce9.setIcon(icon_159e77664c65ac2a89968078413ae3da);
+        
+    
+        var popup_cce09f6a90cfcb7a6f43da24d7782682 = L.popup({"maxWidth": 300});
+
+        
+            var html_d6f9ef9e9c91225a88289d36e7d934cf = $(`<div id="html_d6f9ef9e9c91225a88289d36e7d934cf" style="width: 100.0%; height: 100.0%;"><b>Day 5 Activity:</b><br><b>Djúpivogur</b><br>Visit a quaint fishing village.</div>`)[0];
+            popup_cce09f6a90cfcb7a6f43da24d7782682.setContent(html_d6f9ef9e9c91225a88289d36e7d934cf);
+        
+
+        marker_a98d0a9afc03ef63156e361a0d5b1ce9.bindPopup(popup_cce09f6a90cfcb7a6f43da24d7782682)
+        ;
+
+        
+    
+    
+            var marker_5e2e15df0691e08316971e4b5318079c = L.marker(
+                [65.267, -14.394],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_73882e6d9b36041e5711dc01dd9b0d89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5e2e15df0691e08316971e4b5318079c.setIcon(icon_73882e6d9b36041e5711dc01dd9b0d89);
+        
+    
+        var popup_175fb224ab61a74225c09ee558089890 = L.popup({"maxWidth": 300});
+
+        
+            var html_a06633d3c3dcfc845b1697654f762683 = $(`<div id="html_a06633d3c3dcfc845b1697654f762683" style="width: 100.0%; height: 100.0%;"><b>Day 5 Activity:</b><br><b>Egilsstaðir</b><br>Relax in the geothermal baths.</div>`)[0];
+            popup_175fb224ab61a74225c09ee558089890.setContent(html_a06633d3c3dcfc845b1697654f762683);
+        
+
+        marker_5e2e15df0691e08316971e4b5318079c.bindPopup(popup_175fb224ab61a74225c09ee558089890)
+        ;
+
+        
+    
+    
+            var marker_dc4523749bd756abd47cad3f3a860dc5 = L.marker(
+                [65.267, -14.394],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_88d637393cd8b9b18112c1cebefd6bd7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dc4523749bd756abd47cad3f3a860dc5.setIcon(icon_88d637393cd8b9b18112c1cebefd6bd7);
+        
+    
+        var popup_0b75cbc6e5dafc7abbdeb6ead43d3a20 = L.popup({"maxWidth": 300});
+
+        
+            var html_bc13e45c113ed1421aa6b066b1b14740 = $(`<div id="html_bc13e45c113ed1421aa6b066b1b14740" style="width: 100.0%; height: 100.0%;"><b>Day 5 Accommodation:</b><br><b>Hotel/Guesthouse in Egilsstaðir</b><br>Stay overnight.</div>`)[0];
+            popup_0b75cbc6e5dafc7abbdeb6ead43d3a20.setContent(html_bc13e45c113ed1421aa6b066b1b14740);
+        
+
+        marker_dc4523749bd756abd47cad3f3a860dc5.bindPopup(popup_0b75cbc6e5dafc7abbdeb6ead43d3a20)
+        ;
+
+        
+    
+    
+            var marker_2290d3526a7e78471fcbe8a707183e21 = L.marker(
+                [65.643, -16.811],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_c713ed58f018abaf483676ebf88f5bd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_2290d3526a7e78471fcbe8a707183e21.setIcon(icon_c713ed58f018abaf483676ebf88f5bd5);
+        
+    
+        var popup_d9a4419fbb7ff8e9b6490f9c46d722b7 = L.popup({"maxWidth": 300});
+
+        
+            var html_ef0a6143f966dfee11c7f7a4b962ba14 = $(`<div id="html_ef0a6143f966dfee11c7f7a4b962ba14" style="width: 100.0%; height: 100.0%;"><b>Day 6 Activity:</b><br><b>Hverir</b><br>Explore bubbling mud pots and fumaroles.</div>`)[0];
+            popup_d9a4419fbb7ff8e9b6490f9c46d722b7.setContent(html_ef0a6143f966dfee11c7f7a4b962ba14);
+        
+
+        marker_2290d3526a7e78471fcbe8a707183e21.bindPopup(popup_d9a4419fbb7ff8e9b6490f9c46d722b7)
+        ;
+
+        
+    
+    
+            var marker_01a8489f55eb49ddcccc8456941154dd = L.marker(
+                [65.608, -16.887],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_dbc3e03e4437cb240cc6a504bc4ed076 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_01a8489f55eb49ddcccc8456941154dd.setIcon(icon_dbc3e03e4437cb240cc6a504bc4ed076);
+        
+    
+        var popup_f3c0ec87960a968d7c6974ca338ecb31 = L.popup({"maxWidth": 300});
+
+        
+            var html_16d8772680d12e1e984d330ff8b8f027 = $(`<div id="html_16d8772680d12e1e984d330ff8b8f027" style="width: 100.0%; height: 100.0%;"><b>Day 6 Activity:</b><br><b>Dimmuborgir</b><br>Hike through lava formations.</div>`)[0];
+            popup_f3c0ec87960a968d7c6974ca338ecb31.setContent(html_16d8772680d12e1e984d330ff8b8f027);
+        
+
+        marker_01a8489f55eb49ddcccc8456941154dd.bindPopup(popup_f3c0ec87960a968d7c6974ca338ecb31)
+        ;
+
+        
+    
+    
+            var marker_d0eae6fbe5709f2dda98bdae96eaac1d = L.marker(
+                [65.597, -17.002],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_1ddc514a9872904bf0b7277d070977a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_d0eae6fbe5709f2dda98bdae96eaac1d.setIcon(icon_1ddc514a9872904bf0b7277d070977a2);
+        
+    
+        var popup_10009d094ff00f5b17585ef83a466870 = L.popup({"maxWidth": 300});
+
+        
+            var html_3c039141e382584f5e799bf6416db428 = $(`<div id="html_3c039141e382584f5e799bf6416db428" style="width: 100.0%; height: 100.0%;"><b>Day 6 Accommodation:</b><br><b>Hotel/Guesthouse near Mývatn</b><br>Stay overnight.</div>`)[0];
+            popup_10009d094ff00f5b17585ef83a466870.setContent(html_3c039141e382584f5e799bf6416db428);
+        
+
+        marker_d0eae6fbe5709f2dda98bdae96eaac1d.bindPopup(popup_10009d094ff00f5b17585ef83a466870)
+        ;
+
+        
+    
+    
+            var marker_c977f145d7e400da33b4c1bbfb483283 = L.marker(
+                [66.043, -17.338],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_aae665c102a3db36101431603d5a6f06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c977f145d7e400da33b4c1bbfb483283.setIcon(icon_aae665c102a3db36101431603d5a6f06);
+        
+    
+        var popup_c97a159cd1fe0744dd2ebf1cf2d6ce54 = L.popup({"maxWidth": 300});
+
+        
+            var html_83be39245624d3ecc620566592d9117d = $(`<div id="html_83be39245624d3ecc620566592d9117d" style="width: 100.0%; height: 100.0%;"><b>Day 7 Activity:</b><br><b>Whale Watching</b><br>Join a tour to see marine life.</div>`)[0];
+            popup_c97a159cd1fe0744dd2ebf1cf2d6ce54.setContent(html_83be39245624d3ecc620566592d9117d);
+        
+
+        marker_c977f145d7e400da33b4c1bbfb483283.bindPopup(popup_c97a159cd1fe0744dd2ebf1cf2d6ce54)
+        ;
+
+        
+    
+    
+            var marker_00c090e1ca162cdf037bc005184b21fa = L.marker(
+                [66.045, -17.342],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_37617783dfbd1e859ea2868b33578c07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_00c090e1ca162cdf037bc005184b21fa.setIcon(icon_37617783dfbd1e859ea2868b33578c07);
+        
+    
+        var popup_33f220fa5e9f4204ccc5b70156c62489 = L.popup({"maxWidth": 300});
+
+        
+            var html_c9904f88a1a187d13576a11bac249c78 = $(`<div id="html_c9904f88a1a187d13576a11bac249c78" style="width: 100.0%; height: 100.0%;"><b>Day 7 Activity:</b><br><b>Geosea Baths</b><br>Relax with ocean views.</div>`)[0];
+            popup_33f220fa5e9f4204ccc5b70156c62489.setContent(html_c9904f88a1a187d13576a11bac249c78);
+        
+
+        marker_00c090e1ca162cdf037bc005184b21fa.bindPopup(popup_33f220fa5e9f4204ccc5b70156c62489)
+        ;
+
+        
+    
+    
+            var marker_1c8d080a973b9ba499c731b7e8f04757 = L.marker(
+                [66.043, -17.338],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_a7a07fa2c474702340b846424f86bfb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1c8d080a973b9ba499c731b7e8f04757.setIcon(icon_a7a07fa2c474702340b846424f86bfb7);
+        
+    
+        var popup_796c58125c353d59375d9d7d1b46cac5 = L.popup({"maxWidth": 300});
+
+        
+            var html_39a28b335c7cbe1fa381b07f4f519365 = $(`<div id="html_39a28b335c7cbe1fa381b07f4f519365" style="width: 100.0%; height: 100.0%;"><b>Day 7 Accommodation:</b><br><b>Hotel/Guesthouse in Húsavík</b><br>Stay overnight.</div>`)[0];
+            popup_796c58125c353d59375d9d7d1b46cac5.setContent(html_39a28b335c7cbe1fa381b07f4f519365);
+        
+
+        marker_1c8d080a973b9ba499c731b7e8f04757.bindPopup(popup_796c58125c353d59375d9d7d1b46cac5)
+        ;
+
+        
+    
+    
+            var marker_d045774938f0a85004613f5df2aa32af = L.marker(
+                [65.684, -17.548],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_224e43c122c7612757f6aab02c6b80f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_d045774938f0a85004613f5df2aa32af.setIcon(icon_224e43c122c7612757f6aab02c6b80f0);
+        
+    
+        var popup_fde3b94b6f93236ea0cafc3fa364e38f = L.popup({"maxWidth": 300});
+
+        
+            var html_fe814985fbc88b83056e8b7ccb8c6e84 = $(`<div id="html_fe814985fbc88b83056e8b7ccb8c6e84" style="width: 100.0%; height: 100.0%;"><b>Day 8 Activity:</b><br><b>Goðafoss</b><br>Admire the 'Waterfall of the Gods'.</div>`)[0];
+            popup_fde3b94b6f93236ea0cafc3fa364e38f.setContent(html_fe814985fbc88b83056e8b7ccb8c6e84);
+        
+
+        marker_d045774938f0a85004613f5df2aa32af.bindPopup(popup_fde3b94b6f93236ea0cafc3fa364e38f)
+        ;
+
+        
+    
+    
+            var marker_0d31d9739898af4085cc15609e6c549e = L.marker(
+                [65.688, -18.125],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_102aa755b509cec914f4506c23fd185d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_0d31d9739898af4085cc15609e6c549e.setIcon(icon_102aa755b509cec914f4506c23fd185d);
+        
+    
+        var popup_9ecab4fed9d02b6ff8d6d1ff4bf3ffb4 = L.popup({"maxWidth": 300});
+
+        
+            var html_8d4b1702c9abd972544fac452c79ac2e = $(`<div id="html_8d4b1702c9abd972544fac452c79ac2e" style="width: 100.0%; height: 100.0%;"><b>Day 8 Activity:</b><br><b>Akureyri</b><br>Explore the charming town.</div>`)[0];
+            popup_9ecab4fed9d02b6ff8d6d1ff4bf3ffb4.setContent(html_8d4b1702c9abd972544fac452c79ac2e);
+        
+
+        marker_0d31d9739898af4085cc15609e6c549e.bindPopup(popup_9ecab4fed9d02b6ff8d6d1ff4bf3ffb4)
+        ;
+
+        
+    
+    
+            var marker_00663dad59fbb9901a6758ef58b73c80 = L.marker(
+                [65.688, -18.125],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_059839fc7a55c1346616882654766b1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_00663dad59fbb9901a6758ef58b73c80.setIcon(icon_059839fc7a55c1346616882654766b1d);
+        
+    
+        var popup_34cf58db4e623b65c21492cacb6c3618 = L.popup({"maxWidth": 300});
+
+        
+            var html_fa28c00891bd377c6539b070402c0714 = $(`<div id="html_fa28c00891bd377c6539b070402c0714" style="width: 100.0%; height: 100.0%;"><b>Day 8 Accommodation:</b><br><b>Hotel/Guesthouse in Akureyri</b><br>Stay overnight.</div>`)[0];
+            popup_34cf58db4e623b65c21492cacb6c3618.setContent(html_fa28c00891bd377c6539b070402c0714);
+        
+
+        marker_00663dad59fbb9901a6758ef58b73c80.bindPopup(popup_34cf58db4e623b65c21492cacb6c3618)
+        ;
+
+        
+    
+    
+            var marker_d3b553b49246ca04d483fac83aa3047b = L.marker(
+                [64.928, -23.312],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_1977c9a0f315c998b84916308b491852 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_d3b553b49246ca04d483fac83aa3047b.setIcon(icon_1977c9a0f315c998b84916308b491852);
+        
+    
+        var popup_e12afe177c0f586df2913dcc2a229efd = L.popup({"maxWidth": 300});
+
+        
+            var html_688f9170efc0f0f8e869e3abdfd1203d = $(`<div id="html_688f9170efc0f0f8e869e3abdfd1203d" style="width: 100.0%; height: 100.0%;"><b>Day 9 Activity:</b><br><b>Kirkjufell</b><br>Iconic mountain and waterfall.</div>`)[0];
+            popup_e12afe177c0f586df2913dcc2a229efd.setContent(html_688f9170efc0f0f8e869e3abdfd1203d);
+        
+
+        marker_d3b553b49246ca04d483fac83aa3047b.bindPopup(popup_e12afe177c0f586df2913dcc2a229efd)
+        ;
+
+        
+    
+    
+            var marker_a400f54621789f1945fda4fd1e344885 = L.marker(
+                [64.8, -23.8],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_743de726e1306b5a62d274a14e7ef774 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_a400f54621789f1945fda4fd1e344885.setIcon(icon_743de726e1306b5a62d274a14e7ef774);
+        
+    
+        var popup_d41b62e6664ae7586860ae5ac6a237d0 = L.popup({"maxWidth": 300});
+
+        
+            var html_f1738646fe414717a50beabb4f8f5f59 = $(`<div id="html_f1738646fe414717a50beabb4f8f5f59" style="width: 100.0%; height: 100.0%;"><b>Day 9 Activity:</b><br><b>Snæfellsjökull</b><br>Explore glaciers and lava fields.</div>`)[0];
+            popup_d41b62e6664ae7586860ae5ac6a237d0.setContent(html_f1738646fe414717a50beabb4f8f5f59);
+        
+
+        marker_a400f54621789f1945fda4fd1e344885.bindPopup(popup_d41b62e6664ae7586860ae5ac6a237d0)
+        ;
+
+        
+    
+    
+            var marker_ab62d3a5cf64bb84237c70dcd4dcc0ab = L.marker(
+                [64.832, -23.135],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_8ba4d9adb00c80178a541c3fc55709d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_ab62d3a5cf64bb84237c70dcd4dcc0ab.setIcon(icon_8ba4d9adb00c80178a541c3fc55709d9);
+        
+    
+        var popup_0016923a1de2f874af869bac051cb15b = L.popup({"maxWidth": 300});
+
+        
+            var html_b340d2e0d06a8896443a0c7f0127f80b = $(`<div id="html_b340d2e0d06a8896443a0c7f0127f80b" style="width: 100.0%; height: 100.0%;"><b>Day 9 Accommodation:</b><br><b>Hotel/Guesthouse in Snæfellsnes</b><br>Stay overnight.</div>`)[0];
+            popup_0016923a1de2f874af869bac051cb15b.setContent(html_b340d2e0d06a8896443a0c7f0127f80b);
+        
+
+        marker_ab62d3a5cf64bb84237c70dcd4dcc0ab.bindPopup(popup_0016923a1de2f874af869bac051cb15b)
+        ;
+
+        
+    
+    
+            var marker_3474f673f679a1341be91943a363b867 = L.marker(
+                [64.544, -21.898],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_0e126c45225a83ec559d23554cc6c226 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_3474f673f679a1341be91943a363b867.setIcon(icon_0e126c45225a83ec559d23554cc6c226);
+        
+    
+        var popup_cb4091ca0978a9d89d5a294a5b51c753 = L.popup({"maxWidth": 300});
+
+        
+            var html_de026ba575f67b3a3fe0382ec68d49ef = $(`<div id="html_de026ba575f67b3a3fe0382ec68d49ef" style="width: 100.0%; height: 100.0%;"><b>Day 10 Activity:</b><br><b>Borgarnes</b><br>Learn about Icelandic history.</div>`)[0];
+            popup_cb4091ca0978a9d89d5a294a5b51c753.setContent(html_de026ba575f67b3a3fe0382ec68d49ef);
+        
+
+        marker_3474f673f679a1341be91943a363b867.bindPopup(popup_cb4091ca0978a9d89d5a294a5b51c753)
+        ;
+
+        
+    
+    
+            var marker_48ff45253ad690764c30268756ea1990 = L.marker(
+                [64.1355, -21.8954],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_30a577436cabf78f73c6dbbeb7085357 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_48ff45253ad690764c30268756ea1990.setIcon(icon_30a577436cabf78f73c6dbbeb7085357);
+        
+    
+        var popup_16faf9c5f235ce139945aabbf8a088df = L.popup({"maxWidth": 300});
+
+        
+            var html_ba54af6e67177ea63b027fa419c8195d = $(`<div id="html_ba54af6e67177ea63b027fa419c8195d" style="width: 100.0%; height: 100.0%;"><b>Day 10 Activity:</b><br><b>Reykjavik</b><br>Relax and enjoy the city.</div>`)[0];
+            popup_16faf9c5f235ce139945aabbf8a088df.setContent(html_ba54af6e67177ea63b027fa419c8195d);
+        
+
+        marker_48ff45253ad690764c30268756ea1990.bindPopup(popup_16faf9c5f235ce139945aabbf8a088df)
+        ;
+
+        
+    
+    
+            var marker_b43648d2455be92a83ecac973d522c76 = L.marker(
+                [64.142, -21.918],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_ada6c8c8fef2f632a5c652d60c5e7c13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_b43648d2455be92a83ecac973d522c76.setIcon(icon_ada6c8c8fef2f632a5c652d60c5e7c13);
+        
+    
+        var popup_10dfd13b69b8ef0305e7c1414dd92038 = L.popup({"maxWidth": 300});
+
+        
+            var html_7b565b239ee1d773d47c9286d2ef6744 = $(`<div id="html_7b565b239ee1d773d47c9286d2ef6744" style="width: 100.0%; height: 100.0%;"><b>Day 10 Accommodation:</b><br><b>Hotel/Guesthouse in Reykjavik</b><br>Stay overnight.</div>`)[0];
+            popup_10dfd13b69b8ef0305e7c1414dd92038.setContent(html_7b565b239ee1d773d47c9286d2ef6744);
+        
+
+        marker_b43648d2455be92a83ecac973d522c76.bindPopup(popup_10dfd13b69b8ef0305e7c1414dd92038)
+        ;
+
+        
+    
+    
+            var marker_9c5fa8114b60f6835002ceb418cdd374 = L.marker(
+                [65.568, -20.782],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_1d1b8c3245ed8168f22f642ced9220ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_9c5fa8114b60f6835002ceb418cdd374.setIcon(icon_1d1b8c3245ed8168f22f642ced9220ad);
+        
+    
+        var popup_97aa4470b3b666020fd820a6f2d514ac = L.popup({"maxWidth": 300});
+
+        
+            var html_ee104cd552fea8203852067b5d112f82 = $(`<div id="html_ee104cd552fea8203852067b5d112f82" style="width: 100.0%; height: 100.0%;"><b>Optional Activity:</b><br><b>Seal Watching</b><br>Spot seals at Illugastaðir or Ósar.</div>`)[0];
+            popup_97aa4470b3b666020fd820a6f2d514ac.setContent(html_ee104cd552fea8203852067b5d112f82);
+        
+
+        marker_9c5fa8114b60f6835002ceb418cdd374.bindPopup(popup_97aa4470b3b666020fd820a6f2d514ac)
+        ;
+
+        
+    
+    
+            var marker_39c4462151f9efce1f84eca38e42469c = L.marker(
+                [65.604, -20.637],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_493c471a9eeb154355c72c7677db68bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_39c4462151f9efce1f84eca38e42469c.setIcon(icon_493c471a9eeb154355c72c7677db68bc);
+        
+    
+        var popup_702fa8522127c6822852675d81c0be6b = L.popup({"maxWidth": 300});
+
+        
+            var html_dc438db663920ff1f81178032987c45b = $(`<div id="html_dc438db663920ff1f81178032987c45b" style="width: 100.0%; height: 100.0%;"><b>Optional Activity:</b><br><b>Hvítserkur</b><br>A dragon-shaped rock formation in the sea.</div>`)[0];
+            popup_702fa8522127c6822852675d81c0be6b.setContent(html_dc438db663920ff1f81178032987c45b);
+        
+
+        marker_39c4462151f9efce1f84eca38e42469c.bindPopup(popup_702fa8522127c6822852675d81c0be6b)
+        ;
+
+        
+    
+    
+            var marker_ef46ba95bb792611b9257093d7cefd28 = L.marker(
+                [65.293, -20.394],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_898db8b0d1a09b102a8a481ad80997a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_ef46ba95bb792611b9257093d7cefd28.setIcon(icon_898db8b0d1a09b102a8a481ad80997a5);
+        
+    
+        var popup_f5e4c53b765147b137a68901416498d2 = L.popup({"maxWidth": 300});
+
+        
+            var html_e982ef122d1fa1c2bf0746e596027551 = $(`<div id="html_e982ef122d1fa1c2bf0746e596027551" style="width: 100.0%; height: 100.0%;"><b>Optional Activity:</b><br><b>Kolugljúfur Canyon</b><br>Scenic canyon with Kolufossar waterfalls.</div>`)[0];
+            popup_f5e4c53b765147b137a68901416498d2.setContent(html_e982ef122d1fa1c2bf0746e596027551);
+        
+
+        marker_ef46ba95bb792611b9257093d7cefd28.bindPopup(popup_f5e4c53b765147b137a68901416498d2)
+        ;
+
+        
+    
+    
+            var marker_d9ee6434ce99d02f80cc20a3aca0a389 = L.marker(
+                [65.399, -20.94],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_388f62426b174241b7cb282903f28aed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_d9ee6434ce99d02f80cc20a3aca0a389.setIcon(icon_388f62426b174241b7cb282903f28aed);
+        
+    
+        var popup_0ac196af1a3b18dfb50c5c64b69a2af1 = L.popup({"maxWidth": 300});
+
+        
+            var html_80805902d42a44c9c824bf067bc7945a = $(`<div id="html_80805902d42a44c9c824bf067bc7945a" style="width: 100.0%; height: 100.0%;"><b>Optional Activity:</b><br><b>Icelandic Seal Center Museum</b><br>Learn about seal habitats.</div>`)[0];
+            popup_0ac196af1a3b18dfb50c5c64b69a2af1.setContent(html_80805902d42a44c9c824bf067bc7945a);
+        
+
+        marker_d9ee6434ce99d02f80cc20a3aca0a389.bindPopup(popup_0ac196af1a3b18dfb50c5c64b69a2af1)
+        ;
+
+        
+    
+    
+            var marker_10027df82a2dba249de85d5155880f5d = L.marker(
+                [65.828, -20.313],
+                {}
+            ).addTo(map_c6a97856db1f24042a163c9b933f1e7c);
+        
+    
+            var icon_dc1eb311b2e4b7d4b6605851844dba9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgray", "prefix": "glyphicon"}
+            );
+            marker_10027df82a2dba249de85d5155880f5d.setIcon(icon_dc1eb311b2e4b7d4b6605851844dba9f);
+        
+    
+        var popup_d25f9775762a8b08a54bddad165a851b = L.popup({"maxWidth": 300});
+
+        
+            var html_7b59e4bf74230ee7890703644e325407 = $(`<div id="html_7b59e4bf74230ee7890703644e325407" style="width: 100.0%; height: 100.0%;"><b>Optional Activity:</b><br><b>Spákonufell Mountain</b><br>A hike offering stunning views.</div>`)[0];
+            popup_d25f9775762a8b08a54bddad165a851b.setContent(html_7b59e4bf74230ee7890703644e325407);
+        
+
+        marker_10027df82a2dba249de85d5155880f5d.bindPopup(popup_d25f9775762a8b08a54bddad165a851b)
+        ;
+
+        
+    
+</script>
+</html>
